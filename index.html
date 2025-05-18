@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Caue Casonato - Software QA Engineer, Python Developer from Brazil">
+    <meta name="keywords" content="Software QA Engineer, Python Developer, Brazil, Software Engineering">
+    <title>Caue Casonato | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <div class="theme-toggle">
+        <button id="theme-button">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">CC</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Caue Casonato" id="profile-pic" onerror="this.onerror=null"; this.src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"><circle cx="100" cy="100" r="100" fill="#1A365D"/><text x="100" y="115" font-family="Arial" font-size="60" fill="white" text-anchor="middle">CC</text></svg>';">
+                </div>
+                <h1 class="name">Caue Casonato</h1>
+                <p class="tagline">Software Engineering Student | Quality Assurance & Python Developer</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p class="bio">
+                    I'm a Brazilian tech enthusiast studying Software Quality Assurance and Engineering at CCTB. 
+                    With 5 years of IT experience starting as a trainee at 14, I transitioned to coding in 2023 
+                    and am passionate about building reliable software systems.
+                </p>
+                
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="cert-badges">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Harvard CS50 (EdX) – Computer Science</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Harvard CS50P (EdX) – Python Programming</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience">
+                    <h3>Experience Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>IT Trainee</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Technical Support Specialist</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Software Engineering Student</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Cau393" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/cauê-casonato-30b92728b/" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="#" class="social-btn" id="resume-btn">
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Caue Casonato. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
